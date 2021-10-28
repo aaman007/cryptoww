@@ -10,6 +10,7 @@ import {
 	ItemLink
 } from "./Navbar.styled";
 import Container from "../Container";
+import * as urls from "../../urls";
 
 const Navbar = () => {
 	return (
@@ -22,10 +23,10 @@ const Navbar = () => {
 					</Brand>
 					<NavItemsWrapper>
 						<NavItem>
-							<ItemLink to={"/"} exact> Home </ItemLink>
+							<ItemLink to={urls.home()} exact> Home </ItemLink>
 						</NavItem>
 						<NavItem>
-							<ItemLink to={"/explore"} exact> Explore </ItemLink>
+							<ItemLink to={urls.explore()} exact> Explore </ItemLink>
 						</NavItem>
 					</NavItemsWrapper>
 				</NavContent>

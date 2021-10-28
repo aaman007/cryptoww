@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from "../pages/Home";
 import Explore from "../pages/Explore";
 import BaseLayout from "../layouts/base";
+import * as urls from "../urls";
 
 const routes = [
 	{
-		path: '/',
+		path: urls.home(),
 		component: Home,
 		exact: true
 	},
 	{
-		path: '/explore',
+		path: urls.explore(),
 		component: Explore,
 		exact: true
 	}

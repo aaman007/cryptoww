@@ -1,1 +1,7 @@
-export const explore = '/explore';
+export const home = () => {
+	return '/';
+}
+
+export const explore = () => {
+	return '/explore';
+}
